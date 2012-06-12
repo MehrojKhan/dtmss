@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
+  <asmv1:assemblyIdentity name="SMSBomber.exe" version="1.0.0.0" publicKeyToken="b9d5d0db07e7bdfb" language="en" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="600px-MKwii_Bob-omb.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="SMSBomber" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="SMSBomber.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SMSBomber.exe" size="2925056">
+      <assemblyIdentity name="SMSBomber" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>MbUFeJIqiutE5RaFBB/pttMYKUbz/gSoHFpYMBNsFkM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="600px-MKwii_Bob-omb.ico" size="578126">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>JmjjSb2SiHJ7tlXeULYCC6G7J9tVl3wquHHHZTvZjI8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="SMSBomber.exe.config" size="187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xm4bo26HQ0LNVwz1vdPYtzhkpMnp2AI5i+f0b+OahTI=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=Aarons\Aaron" issuerKeyHash="605ef4a2736c5350947b9ff92d89bae2e517253d" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><DigestValue>Xr+DoDfxzYE1tdmO0aOba6e1Bj9eu3OKlyaVdByKoAE=</DigestValue></Reference></SignedInfo><SignatureValue>Aa/bfIjRd2zuASQapSuKLUeIxfFmau0PzVqXmywXuxruY8xK4x9BNmmV8RL+/go1c/HXALUYPQ0NBQiCKqDLGB9KeIVvEwMKOmWVRaHi7c6SQ9RrghH708QWZgoekbnNyyt6/Y4REdpXl7JslGENAQ4CO3im/EVpAyYW35hOx0o=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>6UPs2GCxaESfrBLhE5hU6f5Xs1+PkEzpHg2YX5LcC7ehtWdXUAxDki6Ynu7rsn7P3u14ceEyDuczMOOQjx387clg7K2AwccCV24xh9uE/khr1cEFpIAT/H9jOvBh0g+4aPig9quicQTJQ1DiCsbUhDKcVoZpslLSUWGZl9eP0u8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="01a08a1c749526978a73bb5e3f06b5a76b9ba3d18ed9b53581cdf137a083bf5e" Description="" Url=""><as:assemblyIdentity name="SMSBomber.exe" version="1.0.0.0" publicKeyToken="b9d5d0db07e7bdfb" language="en" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Aarons\Aaron</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><DigestValue>zBVWDxj0V+hFliLqJaxZghBDYfBt7WLzV6GxlolegnE=</DigestValue></Reference></SignedInfo><SignatureValue>LcfeV9IBijtpDJ1e682/dzeRf7OiS23JyZxz8juJXg+Bs8JjXuejWJynOjuphxg/0XIW1woYBY6ERsRstuqCgrH0ixP2L2V45F+qMunqGvz5ZLMU+7JhuaDtjtzeqtAGgXLWqV6PAYLu8kNrtVRcDd1pY4S+HgPIL9yXWbnxCmw=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>oLu8fNqIjlZFj25XhC8fCF82G0+s7ZWEHwitZAJC20UVwTFYamc/049M5VIXC3UphzoKgDy/izzyUMLbH/C+KZcfFBXG7mB/L+912ZW/kGm4JbBrQnVS7aEO7i8qSXEGFuVrKgTvs+q2nyVIe/bRk4DyIWprOmPg6Otx8rBdwOU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIByTCCATKgAwIBAgIQdJQNQYWv0IlHa5Tn6IRotTANBgkqhkiG9w0BAQsFADAjMSEwHwYDVQQDHhgAQQBhAHIAbwBuAHMAXABBAGEAcgBvAG4wHhcNMTIwNjEyMTYyNTU0WhcNMTMwNjEyMjIyNTU0WjAjMSEwHwYDVQQDHhgAQQBhAHIAbwBuAHMAXABBAGEAcgBvAG4wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAOlD7NhgsWhEn6wS4ROYVOn+V7Nfj5BM6R4NmF+S3Au3obVnV1AMQ5IumJ7u67J+z97teHHhMg7nMzDjkI8d/O3JYOytgMHHAlduMYfbhP5Ia9XBBaSAE/x/YzrwYdIPuGj4oParonEEyUNQ4grG1IQynFaGabJS0lFhmZfXj9LvAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAeNWBuku+P/IWiQxVZQA6YvDYfTt0Iax2dQvEjsuPGy3CUTPnOdZ195Atzmrw5Woq9s+1cU3LtHSNaYc25cghwW8oAWHqgluXvsZx+5gXKYUIlboMkTRzOJHq4euitSxlpeorp4NjAfAj/g0yJESgxB5xqmnhh91cjJC/h3bXNfQ=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

@@ -20,10 +20,11 @@ namespace SMSBomber
         List<Thread> ThreadPool = new List<Thread>();
         List<EMail> ClientPool = new List<EMail>();
         Thread MonitorThread = null;
-        
+        int TotalSent = 0;
         bool Stop = false;
         public Main()
         {
+            CheckForIllegalCrossThreadCalls = false;
             InitializeComponent();
         }
 
@@ -164,6 +165,7 @@ namespace SMSBomber
                             EMail temp = new EMail(iemail.Address, iemail.Password, iemail.SMTP, iemail.Port, iemail.SSL, textBox1.Text + settings.CarrierHost(comboBox1.Text), textBox2.Text);
                             Thread t = new Thread(new ThreadStart(delegate { temp.Send(0); }));
                             ThreadPool.Add(t);
+                            ClientPool.Add(temp);
                             t.Start();
                         }
                     }
@@ -179,6 +181,7 @@ namespace SMSBomber
                             EMail temp = new EMail(iemail.Address, iemail.Password, iemail.SMTP, iemail.Port, iemail.SSL, textBox1.Text + settings.CarrierHost(comboBox1.Text), textBox2.Text);
                             Thread t = new Thread(new ThreadStart(delegate { temp.Send(cpt); }));
                             ThreadPool.Add(t);
+                            ClientPool.Add(temp);
                             t.Start();
                         }
                     }
@@ -198,6 +201,7 @@ namespace SMSBomber
                 {
                     Thread t = new Thread(new ThreadStart(delegate { temp.Send(0); }));
                     ThreadPool.Add(t);
+                    ClientPool.Add(temp);
                     t.Start();
                 }
                 else
@@ -207,6 +211,7 @@ namespace SMSBomber
                         return;
                     Thread t = new Thread(new ThreadStart(delegate { temp.Send(i); }));
                     ThreadPool.Add(t);
+                    ClientPool.Add(temp);
                     t.Start();
 
                 }
@@ -251,7 +256,16 @@ namespace SMSBomber
         }
         private void Monitor()
         {
-
+            while (!Stop)
+            {
+                int temp = 0;
+                foreach (EMail es in ClientPool)
+                {
+                    temp += es.Count;
+                }
+                TotalSent = temp;
+                this.Text = "SMS Bomber : Sent " + TotalSent.ToString();
+            }
         }
     }
 }
