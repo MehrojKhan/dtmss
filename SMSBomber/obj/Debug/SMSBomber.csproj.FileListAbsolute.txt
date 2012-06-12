@@ -1,0 +1,11 @@
+c:\users\aaron\documents\visual studio 11\Projects\SMSBomber\SMSBomber\bin\Debug\SMSBomber.exe.config
+C:\Users\Aaron\documents\visual studio 11\Projects\SMSBomber\SMSBomber\bin\Debug\SMSBomber.exe
+C:\Users\Aaron\documents\visual studio 11\Projects\SMSBomber\SMSBomber\bin\Debug\SMSBomber.pdb
+C:\Users\Aaron\documents\visual studio 11\Projects\SMSBomber\SMSBomber\obj\Debug\SMSBomber.csprojResolveAssemblyReference.cache
+C:\Users\Aaron\documents\visual studio 11\Projects\SMSBomber\SMSBomber\obj\Debug\SMSBomber.Main.resources
+C:\Users\Aaron\documents\visual studio 11\Projects\SMSBomber\SMSBomber\obj\Debug\SMSBomber.Properties.Resources.resources
+C:\Users\Aaron\documents\visual studio 11\Projects\SMSBomber\SMSBomber\obj\Debug\SMSBomber.csproj.GenerateResource.Cache
+C:\Users\Aaron\documents\visual studio 11\Projects\SMSBomber\SMSBomber\obj\Debug\SMSBomber.exe
+C:\Users\Aaron\documents\visual studio 11\Projects\SMSBomber\SMSBomber\obj\Debug\SMSBomber.pdb
+C:\Users\Aaron\documents\visual studio 11\Projects\SMSBomber\SMSBomber\obj\Debug\SMSBomber.EMailForm.resources
+C:\Users\Aaron\documents\visual studio 11\Projects\SMSBomber\SMSBomber\obj\Debug\SMSBomber.Carriers.resources

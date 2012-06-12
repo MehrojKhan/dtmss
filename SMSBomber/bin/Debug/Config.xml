@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Config>
+  <Settings>
+    <Threading>True</Threading>
+    <Send>0</Send>
+    <LastNumber>7606126236</LastNumber>
+    <LastCarrier>ATT</LastCarrier>
+    <LastMessage>test</LastMessage>
+  </Settings>
+  <Carriers>
+    <Carrier>
+      <Name>ATT</Name>
+      <Host>@txt.att.net</Host>
+    </Carrier>
+  </Carriers>
+  <EMails>
+    <EMail>
+      <Address>aaronrubesh6@gmail.com</Address>
+      <Password>xj546kl34rt</Password>
+      <SMTP>smtp.gmail.com</SMTP>
+      <Port>587</Port>
+      <SSL>True</SSL>
+    </EMail>
+    <EMail>
+      <Address>smsbombera1@gmail.com</Address>
+      <Password>ar54ar93</Password>
+      <SMTP>smtp.gmail.com</SMTP>
+      <Port>587</Port>
+      <SSL>True</SSL>
+    </EMail>
+  </EMails>
+</Config>
