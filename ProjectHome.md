@@ -1,0 +1,1 @@
+Dynamically-Threaded Mass SMS Sender(DTMSS) uses SMTP to send SMS messages.
